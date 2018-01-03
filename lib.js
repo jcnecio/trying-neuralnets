@@ -30,10 +30,9 @@ module.exports = {
         }
     },
     createArray: function(size) {
-        var arr = new Array(size + 1);
-        for(var i = 0; i < arr.length; i++) {
+        var arr = new Array(size);
+        for(var i = 0; i < arr.length; i++)
             arr[i] = new module.exports.Unit(1.0, 0.0);
-        }
         return arr;
     }
 }
